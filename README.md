@@ -30,23 +30,23 @@ r	| Right/last index of array
 
 Merge Sort is a Divide and Conquer algorithm. It divides the input array into two halves, calls itself for the two halves until it reaches the base case of l==r or the size of array is one, and then merges the two sorted halves. The merge() function is used for merging two halves. The merge(arr, l, m, r) is a key process that assumes that arr[l..m] and arr[m+1..r] are sorted and merges the two sorted sub-arrays into one. See the following implementation for details.
 
-MergeSort(arr[], l,  r)
-- If r > l
-  - 1. Find the middle point to divide the array into two halves:  
-          middle m = l+ (r-l)/2
-  - 2. Call mergeSort for first half:   
-          Call mergeSort(arr, l, m)
-  - 3. Call mergeSort for second half:
-          Call mergeSort(arr, m+1, r)
-  - 4. Merge the two halves sorted in step 2 and 3:
-          Call merge(arr, l, m, r)
+	MergeSort(arr[], l,  r)
+	- If r > l
+	  - 1. Find the middle point to divide the array into two halves:  
+		  middle m = l+ (r-l)/2
+	  - 2. Call mergeSort for first half:   
+		  Call mergeSort(arr, l, m)
+	  - 3. Call mergeSort for second half:
+		  Call mergeSort(arr, m+1, r)
+	  - 4. Merge the two halves sorted in step 2 and 3:
+		  Call merge(arr, l, m, r)
 
 As an example for better understanding, I’ve added a diagram which shows the whole process.
 		 
 ![Wikipedia Image](https://upload.wikimedia.org/wikipedia/commons/e/e6/Merge_sort_algorithm_diagram.svg)
 
 
-### The Merge Step:
+## The Merge Step:
 
 Every recursive algorithm is dependent on a base case and the ability to combine the results from base cases. Merge sort is no different. The most important part of the merge sort algorithm is, you guessed it, merge step.
 The merge step is the solution to the simple problem of merging two sorted arrays to build one large sorted array.		
@@ -70,25 +70,27 @@ To convert this to code, lets discuss how you should approach the problem.
 
     •	When we run out of element in either LEFT or RIGHT, pick up the remaining element from the sub array which still has elements left and put them in the main array.
 
+## Implementation
 
 Now that we have understood the concept let us look at the coding implementation in C++:
 
-```// C++ program for Merge Sort
+```
+*//C++ program for Merge Sort*
 #include <stdc++.h>
 using namespace std;
  
-// Merges two subarrays of arr[].
-// First subarray is arr[l..m]
-// Second subarray is arr[m+1..r]
+*// Merges two subarrays of arr[].*
+*// First subarray is arr[l..m]*
+*// Second subarray is arr[m+1..r]*
 void merge(int arr[], int l, int m, int r)
 {
     int n1 = m - l + 1;
     int n2 = r - m;
  
-    // Create temp arrays
+    *// Create temp arrays*
     int L[n1], R[n2];
  
-    // Copy data to temp arrays L[] and R[]
+    *// Copy data to temp arrays L[] and R[]*
     for (int i = 0; i < n1; i++)
         L[i] = arr[l + i];
     for (int j = 0; j < n2; j++)
