@@ -1,8 +1,8 @@
-#**Merge Sort**
+# **Merge Sort**
 
 >**Everyday life is like programming, I guess. If you love something you can put beauty on it. -Donald Knuth**
 
-##Introduction
+## Introduction
 There are a lot of sorting techniques out there but those which are easy to understand are not efficient whereas those which are efficient are not easy to understand. But one technique falls between this conundrum; Merge sort is a very easy-to-understand and efficient algorithm for sorting.
 
 It is based on divide and conquer algorithm in which a problem is divided into smaller sub-problems using recursion and after solving all these sub-problems all the solutions are combined.
@@ -15,7 +15,7 @@ To master merge sort, you need to focus only on the three main things happening:
 
 3.	Combine: Here after sorting we combine both the sub array.
 
-###Concept
+## Concept
 Okay, now that we have caught a gist of this topic, lets dive deeper into the algorithm.
 
 For Simplicity I’ve added a table defining variables:
@@ -46,7 +46,7 @@ As an example for better understanding, I’ve added a diagram which shows the w
 
 
 
-###The Merge Step:
+### The Merge Step:
 
 Every recursive algorithm is dependent on a base case and the ability to combine the results from base cases. Merge sort is no different. The most important part of the merge sort algorithm is, you guessed it, merge step.
 The merge step is the solution to the simple problem of merging two sorted arrays to build one large sorted array.		
@@ -174,7 +174,7 @@ Let’s discuss the efficiency of Merge Sort:
 T(n) = 2T(n/2) + θ(n).  The above recurrence can be solved either using the Recurrence Tree method or the Master method. It falls in case II of Master Method and the solution of the recurrence is θ(nLogn). Time complexity of Merge Sort is  θ(nLogn) in all 3 cases (worst, average and best) as merge sort always divides the array into two halves and takes linear time to merge two halves.
     2.	Auxiliary Space: O(n), O(1) with Linked list.
 
-**Conclusion:**
+## **Conclusion:**
 
 We have understood merge sort, now lets talk about its practical uses:
     •	Better for sorting Linked List
