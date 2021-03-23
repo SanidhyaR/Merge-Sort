@@ -43,7 +43,8 @@ MergeSort(arr[], l,  r)
 
 As an example for better understanding, I’ve added a diagram which shows the whole process.
 		 
-
+![Wikipedia Image]
+(https://en.wikipedia.org/wiki/File:Merge_sort_algorithm_diagram.svg)
 
 
 ### The Merge Step:
@@ -176,14 +177,14 @@ int main()
 ## **Conclusion:**
 
 We have understood merge sort, now lets talk about its practical uses:
-    •	Better for sorting Linked List
-    •	Inversion Count Problem
-    •	Used in External sorting
+- Better for sorting Linked List
+- Inversion Count Problem
+- Used in External sorting
 
 Apart from its great benefits, merge sort also has some drawbacks:
-    •	Slower comparative to the other sort algorithms for smaller tasks.
-    •	Merge sort algorithm requires additional memory space of 0(n) for the temporary array 
-    •	It goes through the whole process even if the  array is sorted.
+- Slower comparative to the other sort algorithms for smaller tasks.
+- Merge sort algorithm requires additional memory space of 0(n) for the temporary array 
+- It goes through the whole process even if the  array is sorted.
 
 I hope, now that you’ve understood merge sort you will apply it whenever you think it will be fitting. We all can agree it’s one of the most efficient and easy to understand algorithm.
 
