@@ -43,8 +43,7 @@ MergeSort(arr[], l,  r)
 
 As an example for better understanding, I’ve added a diagram which shows the whole process.
 		 
-![Wikipedia Image]
-(https://en.wikipedia.org/wiki/File:Merge_sort_algorithm_diagram.svg)
+![Wikipedia Image](https://upload.wikimedia.org/wikipedia/commons/e/e6/Merge_sort_algorithm_diagram.svg)
 
 
 ### The Merge Step:
