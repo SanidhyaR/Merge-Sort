@@ -170,8 +170,8 @@ int main()
 ```
 
 ### Let’s discuss the efficiency of Merge Sort:
-    - 1. Time-Complexity: Sorting arrays on different machines. Merge Sort is a recursive algorithm and time complexity can be expressed as following recurrence relation: T(n) = 2T(n/2) + θ(n).  The above recurrence can be solved either using the Recurrence Tree method or the Master method. It falls in case II of Master Method and the solution of the recurrence is θ(nLogn). Time complexity of Merge Sort is  θ(nLogn) in all 3 cases (worst, average and best) as merge sort always divides the array into two halves and takes linear time to merge two halves.
-    - 2. Auxiliary Space: O(n), O(1) with Linked list.
+     1. Time-Complexity: Sorting arrays on different machines. Merge Sort is a recursive algorithm and time complexity can be expressed as following recurrence relation: T(n) = 2T(n/2) + θ(n).  The above recurrence can be solved either using the Recurrence Tree method or the Master method. It falls in case II of Master Method and the solution of the recurrence is θ(nLogn). Time complexity of Merge Sort is  θ(nLogn) in all 3 cases (worst, average and best) as merge sort always divides the array into two halves and takes linear time to merge two halves.
+     2. Auxiliary Space: O(n), O(1) with Linked list.
 
 ## **Conclusion:**
 
