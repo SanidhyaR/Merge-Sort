@@ -79,18 +79,18 @@ Now that we have understood the concept let us look at the coding implementation
 #include <stdc++.h>
 using namespace std;
  
-*// Merges two subarrays of arr[].*
-*// First subarray is arr[l..m]*
-*// Second subarray is arr[m+1..r]*
+// Merges two subarrays of arr[].
+// First subarray is arr[l..m]
+// Second subarray is arr[m+1..r]
 void merge(int arr[], int l, int m, int r)
 {
     int n1 = m - l + 1;
     int n2 = r - m;
  
-    *// Create temp arrays*
+    // Create temp arrays
     int L[n1], R[n2];
  
-    *// Copy data to temp arrays L[] and R[]*
+    // Copy data to temp arrays L[] and R[]
     for (int i = 0; i < n1; i++)
         L[i] = arr[l + i];
     for (int j = 0; j < n2; j++)
@@ -175,7 +175,7 @@ int main()
      1. Time-Complexity: Sorting arrays on different machines. Merge Sort is a recursive algorithm and time complexity can be expressed as following recurrence relation: T(n) = 2T(n/2) + θ(n).  The above recurrence can be solved either using the Recurrence Tree method or the Master method. It falls in case II of Master Method and the solution of the recurrence is θ(nLogn). Time complexity of Merge Sort is  θ(nLogn) in all 3 cases (worst, average and best) as merge sort always divides the array into two halves and takes linear time to merge two halves.
      2. Auxiliary Space: O(n), O(1) with Linked list.
 
-## **Conclusion:**
+## Conclusion:
 
 We have understood merge sort, now lets talk about its practical uses:
 - Better for sorting Linked List
