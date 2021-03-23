@@ -1,8 +1,8 @@
 #**Merge Sort**
 
-__Donald Knuth__
->Everyday life is like programming, I guess. If you love something you can put beauty on it. -Donald Knuth__
+>**Everyday life is like programming, I guess. If you love something you can put beauty on it. -Donald Knuth**
 
+##Introduction
 There are a lot of sorting techniques out there but those which are easy to understand are not efficient whereas those which are efficient are not easy to understand. But one technique falls between this conundrum; Merge sort is a very easy-to-understand and efficient algorithm for sorting.
 
 It is based on divide and conquer algorithm in which a problem is divided into smaller sub-problems using recursion and after solving all these sub-problems all the solutions are combined.
@@ -15,7 +15,7 @@ To master merge sort, you need to focus only on the three main things happening:
 
 3.	Combine: Here after sorting we combine both the sub array.
 
-
+###Concept
 Okay, now that we have caught a gist of this topic, lets dive deeper into the algorithm.
 
 For Simplicity I’ve added a table defining variables:
@@ -30,23 +30,24 @@ r	| Right/last index of array
 
 Merge Sort is a Divide and Conquer algorithm. It divides the input array into two halves, calls itself for the two halves until it reaches the base case of l==r or the size of array is one, and then merges the two sorted halves. The merge() function is used for merging two halves. The merge(arr, l, m, r) is a key process that assumes that arr[l..m] and arr[m+1..r] are sorted and merges the two sorted sub-arrays into one. See the following implementation for details.
 
-```MergeSort(arr[], l,  r)
-If r > l
-     1. Find the middle point to divide the array into two halves:  
-             middle m = l+ (r-l)/2
-     2. Call mergeSort for first half:   
-             Call mergeSort(arr, l, m)
-     3. Call mergeSort for second half:
-             Call mergeSort(arr, m+1, r)
-     4. Merge the two halves sorted in step 2 and 3:
-             Call merge(arr, l, m, r)
-```
+MergeSort(arr[], l,  r)
+- If r > l
+  - 1. Find the middle point to divide the array into two halves:  
+          middle m = l+ (r-l)/2
+  - 2. Call mergeSort for first half:   
+          Call mergeSort(arr, l, m)
+  - 3. Call mergeSort for second half:
+          Call mergeSort(arr, m+1, r)
+  - 4. Merge the two halves sorted in step 2 and 3:
+          Call merge(arr, l, m, r)
+
 As an example for better understanding, I’ve added a diagram which shows the whole process.
 		 
 
 
 
-The Merge Step:
+###The Merge Step:
+
 Every recursive algorithm is dependent on a base case and the ability to combine the results from base cases. Merge sort is no different. The most important part of the merge sort algorithm is, you guessed it, merge step.
 The merge step is the solution to the simple problem of merging two sorted arrays to build one large sorted array.		
 
